@@ -12,7 +12,7 @@ Purpose
 Read and edit text lines, and write what was read.
 
 This library is a simplistic alternative to readline / editline. It offers
-less functionality but it has a more liberal license (see [LICENSE.TXT](LICENSE.txt) in
+less functionality but it has a more liberal license (see [LICENSE.TXT](LICENSE.TXT) in
 the topmost) directory, it has no external dependencies, and it works on
 all platforms that I tested:
 
