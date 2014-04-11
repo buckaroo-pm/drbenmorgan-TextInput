@@ -26,9 +26,10 @@ Adding other platforms is trivial.
 Internal Design
 ===============
 
-[TextInput.h](TextInput.h) contains the main interface. The reading can be extended by
-adding classes that derive from [`textinput::Reader`](Reader.h); the displaying can be extended
-by deriving from [`textinput::Display`](Display.h).
+[TextInput.h](textinput/TextInput.h) contains the main interface.
+The reading can be extended by adding classes that derive
+from [`textinput::Reader`](textinput/Reader.h); the displaying can
+be extended by deriving from [`textinput::Display`](textinput/Display.h).
 
 There can be multiple readers and multiple displays. All displays are
 equal, all readers are equal. All displays show the input of all
@@ -41,7 +42,8 @@ terminal in a non-default state.
 
 The editor provides basic emacs-like keybinding, as known from e.g.
 bash. It supports ^O, ^R (for now without regex), and most word-centric
-editing commands. See [`textinput::KeyBinding`](KeyBinding.h) for details.
+editing commands. See [`textinput::KeyBinding`](textinput/KeyBinding.h)
+for details.
 
 KeyBinding maps the InputData read from the Reader to `Editor::Commands`.
 The Editor performs the requested editing actions, and the Displays
