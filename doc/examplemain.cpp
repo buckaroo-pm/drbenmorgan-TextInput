@@ -20,6 +20,10 @@
 
 #ifdef WIN32
 #include "Windows.h"
+#else
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 #endif
 
 extern "C" int printf(const char*,...);

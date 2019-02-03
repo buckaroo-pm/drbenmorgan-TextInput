@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'example',
+  srcs = [
+    'examplemain.cpp',
+  ],
+  deps = [
+    '//:textinput',
+  ],
+)
